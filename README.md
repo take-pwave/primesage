@@ -8,7 +8,7 @@ sageのPPAを使ってsagemathの環境を提供するためのイメージで�
 - apt-get
 - sage
 
-### dockerの実行
+## dockerの実行
 キャラクターベースでsageを使用する場合には、以下のコマンドを実行します。
 ```bash
 $ docker run -i -t takepwave/primesage
@@ -35,6 +35,10 @@ $ docker run -p 127.0.0.1:8888:8888 -d -t takepwave/primesage /opt/sage_launcher
 ```
 http://localhost:8888/
 ```
+## パッケージのインストール
+Ubuntu, python, Rのパッケージのインストール方法については、以下のノートブックを参照してください。
+
+- [install_packages.ipynb](https://github.com/take-pwave/notebook/blob/master/install_packages.ipynb)
 
 ## ローカルディスクのノートブックを使う
 dockerを起動しているマシンにあるノートブックをdockerのsage jupyterで使用するには、dockerの-vオプションを使用します。
